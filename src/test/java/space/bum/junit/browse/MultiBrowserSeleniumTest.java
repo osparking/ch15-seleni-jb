@@ -32,7 +32,7 @@ public class MultiBrowserSeleniumTest {
     assertThat(driver.getTitle(), is("Manning"));
   }
 
-  @Test
+  @ParameterizedTest
   @MethodSource("getBrowserBrands")
   void testGoogle(WebDriver driver) {
     this.driver = driver;
